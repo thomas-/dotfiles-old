@@ -14,7 +14,8 @@ files = [
 		('.xinitrc','xinitrc'),
 		('.conkyrc','conkyrc'),
 		('.i3/config','i3/config'),
-		('.i3/conkystatus','i3/conkystatus')
+		('.i3/conkystatus','i3/conkystatus'),
+		('.zshrc','zshrc'),
 		]
 
 try: x = sys.argv[1]
