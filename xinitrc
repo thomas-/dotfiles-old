@@ -6,10 +6,7 @@
 #exec i3
 #
 
-DEFAULT_SESSION=i3
-
-case $1 in
-	i3)
+i3() {
 		xbindkeys
 		xmodmap .Xmodmap
 		xrdb load .Xresources
@@ -18,6 +15,14 @@ case $1 in
 		redshift -l 52.97:1.18 -t 6400:4800 &
 		udiskie &
 		exec i3
+}
+
+
+DEFAULT_SESSION=i3
+
+case $1 in
+	i3)
+		i3
 		;;
 	dwm)
 		xbindkeys
@@ -42,6 +47,6 @@ case $1 in
 		exec startlxde
 		;;
 	*)
-		exec $DEFAULT_SESSION
+		i3
 		;;
 esac

@@ -12,6 +12,7 @@ files = [
 		('.xbindkeysrc','xbindkeys'),
 		('.Xmodmap','Xmodmap'),
 		('.xinitrc','xinitrc'),
+		('.conkyrc','conkyrc'),
 		('.i3/config','i3/config'),
 		('.i3/conkystatus','i3/conkystatus')
 		]
